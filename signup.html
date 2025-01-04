@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - BlogMaster</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #faf7f1; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #282828; 
+      background-image: url('https://img.freepik.com/free-vector/paper-style-white-monochrome-background_23-2149023491.jpg');
+      background-size: cover;
+
+    }
+
+    .signup-container {
+      background: #eadab9; 
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      color: #282828; 
+    }
+
+    .project-name {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #807c74; 
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .input-group i {
+      margin-right: 10px;
+      color: #807c74; 
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #807c74; 
+      color: #faf7f1;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #282828; 
+    }
+
+    a {
+      color: #282828; 
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <img src="signup.png" alt="BlogMaster Logo">
+    <div class="project-name">BlogMaster</div>
+    <form onsubmit="redirectToSignin(event)">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" placeholder="Full Name" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+  </div>
+  <script>
+    function redirectToSignin(event) {
+      event.preventDefault();
+      alert('Signup Successful! Redirecting to Signin page.');
+      window.location.href = 'signin.html';
+    }
+  </script>
+</body>
+</html>

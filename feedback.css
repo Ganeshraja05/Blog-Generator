@@ -1,0 +1,139 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4ebd0; 
+  color: #122620; 
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #b68d40; 
+  color: #f4ebd0; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #d6ad60; 
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f4ebd0; 
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d6ad60; 
+}
+
+
+main {
+  padding: 20px;
+}
+
+.feedback-section {
+  background-color: #f4ebd0; 
+  border: 2px solid #b68d40; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h2 {
+  color: #122620; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #122620; 
+}
+
+form input,
+form textarea,
+form select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #b68d40; 
+  border-radius: 5px;
+  background-color: #fff; 
+  color: #122620;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: 2px solid #d6ad60; 
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f4ebd0; 
+  background-color: #b68d40;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #d6ad60; 
+}
+
+#contact-btn {
+  background-color: #122620; 
+  color: #f4ebd0; /
+}
+
+#contact-btn:hover {
+  background-color: #d6ad60; 
+}
+
+
+footer {
+  background-color: #122620; 
+  color: #f4ebd0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 3px solid #b68d40; 
+}

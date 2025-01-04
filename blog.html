@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Generator</title>
+  <link rel="stylesheet" href="blog.css">
+  <script src="blog.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-logo">
+      <h1>Blog Generator</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <section class="form-section">
+      <h2>Create Your Blog Post</h2>
+      <form id="article-form">
+        <label for="article-title">Title:</label>
+        <input type="text" id="article-title" placeholder="Enter the article title" required>
+
+        <label for="article-intro">Introduction:</label>
+        <textarea id="article-intro" rows="4" placeholder="Enter a brief introduction"></textarea>
+
+        <label for="layout">Choose Layout:</label>
+        <select id="layout">
+          <option value="one-column">One Column</option>
+          <option value="two-column">Two Column</option>
+          <option value="grid">Grid</option>
+        </select>
+
+        <h3>Styling</h3>
+        <label for="bg-color">Background Color:</label>
+        <input type="color" id="bg-color" value="#ffffff">
+
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" value="#000000">
+
+        <label for="font-family">Font Family:</label>
+        <select id="font-family">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Courier New">Courier New</option>
+        </select>
+
+        <h3>Text Styling</h3>
+        <label for="text-style-bold">Bold:</label>
+        <input type="radio" id="text-style-bold" name="text-style" value="bold">
+        <label for="text-style-italic">Italic:</label>
+        <input type="radio" id="text-style-italic" name="text-style" value="italic">
+
+        <label for="article-list">Add List Items (Comma-separated):</label>
+        <input type="text" id="article-list" placeholder="Item1, Item2, ...">
+
+        <label for="article-images">Add Image URLs (Comma-separated):</label>
+        <input type="text" id="article-images" placeholder="URL1, URL2, ...">
+
+        <label for="article-references">References (Separate with newlines):</label>
+        <textarea id="article-references" rows="4" placeholder="Enter references"></textarea>
+
+        <label for="footer-text">Footer Text:</label>
+        <textarea id="footer-text" rows="2" placeholder="Enter footer text"></textarea>
+
+        <button type="button" id="generate-article">Generate Article</button>
+      </form>
+    </section>
+
+    <section id="generated-article" class="article-preview"></section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2025 Blog Generator</p>
+  </footer>
+</body>
+</html>

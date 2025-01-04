@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - BlogMaster</title>
+  <link rel="stylesheet" href="feedback.css">
+  <script src="feedback.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo">
+
+
+
+      <img src="https://topicbox.blog/content/images/2018/11/TB-Valentine-s-day-blog-Hero-image.png" height="90px" width="110px"
+        alt="BlogMaster Logo">
+      <h1>BlogMaster</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="feedback-section">
+      <h2>We Value Your Feedback</h2>
+      <form id="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" placeholder="Share your experience" rows="5" required></textarea>
+
+        <label for="rating">Rate Your Experience:</label>
+        <select id="rating" required>
+          <option value="Excellent">Excellent</option>
+          <option value="Good">Good</option>
+          <option value="Average">Average</option>
+          <option value="Poor">Poor</option>
+        </select>
+
+        <button type="button" id="contact-btn">Contact Us</button>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlogMaster. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
